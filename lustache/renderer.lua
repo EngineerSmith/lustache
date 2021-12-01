@@ -1,5 +1,6 @@
-local Scanner  = require(... .. ".lustache.scanner")
-local Context  = require(... .. ".lustache.context")
+local rpath = (...):gsub(".renderer", "")
+local Scanner  = require(rpath .. ".scanner")
+local Context  = require(rpath .. ".context")
 
 local error, ipairs, pairs, setmetatable, tostring, type = 
       error, ipairs, pairs, setmetatable, tostring, type 
